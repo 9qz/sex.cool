@@ -1,187 +1,170 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>9qz</title>
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-         <script src="https://kit.fontawesome.com/6dbcb3829c.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-         <link rel="shortcut icon" href="favicon.ico">
-    <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap');
-
-body {
-  background-color: black;
- 
-}
-#hero img {
-    height: 100vh;
-    width: 100%;
-    background-position: absolute;
-    z-index: 10;
-    object-fit: cover;
-}
-
-#hero .content {
-    background: rgba(0,0,0,0.7);
-    height: 100%;
-    width: 100%;
-    z-index:20;
-    position:absolute;
-    top:0;
-    left:0;
-}
-
-.switch {
-    position:absolute;
-    display: inline-block;
-    width: 60px;
-    height:34px;
-    left: 5%;
-    top:3%;
-}
-
-.switch input {
-    opacity:0;
-    width:0;
-    height:0;
-}
-
-.slider {
-    position: absolute;
-    cursor: url('cursor.png'), auto;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-}
-
-.slider:before{
-    position: absolute;
-    content: "";
-    height: 26px;
-    width:26px ;
-    left:4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: Tomato;
-}
-
-input:focus + .slider{
-    box-shadow: 0 0 20px #2b78c2;
-}
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-.slider.round{
-    border-radius: 34px;
-}
-.slider.round:before {
-    border-radius: 50%;
-}
-
-#clickme {
-    color: #d9ddde;
-    position:absolute;
-    display: inline-block;
-    width: 60px;
-    height:34px;
-    left: 5%;
-    top:3%;
-    text-indent: 12em;
-    font-size: 18px; 
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
-#center {
-font-family: 'PT Sans Narrow', sans-serif;
-}
-
-#button-text {
-font-family: 'Open Sans Condensed', sans-serif;
-}
-
-#block {
-  margin-left: 3px;
-  margin-right:3px;
-}
-
-
-    </style>
-
-</head>
-<body>
-
-<div id='hero'>
-
-<img class="giphy" src="bg.gif">
-
-<div class ="content d-flex align-items-center">
-
-  <div id= "center" class ="container text-center">
-    
-    <h1 style="color:white; padding-bottom: 6px"> 9qz </h1> 
-
-    <span class="icons">
-        <span id="block">
-            <a style="color: Tomato;" href="https://discord.gg/azujNbb6"><i class="fab fa-discord fa-2x" ></i></a>
-        </span>
-        <span id="block">
-            <a style="color: Tomato;" href="https://www.youtube.com/channel/UCYicUx8BUIc3gDKU_L1UEag"><i class="fab fa-youtube fa-2x"></i></a>
-        </span>
-        <span id="block">
-            <a style="color: Tomato;" href="https://github.com/9qz"><i class="fab fa-github fa-2x"></i></a>
-        </span>
-
-    </span>
-
-
-  </div>
-
-
-  <div>
-       <p id="button-text" class="switch" style="color:#d9ddde; margin-left:6px; margin-top: 45px;">click me! </p>
-       <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-        <audio id="myaudio"> <source src="betteraudio.mp3" type="audio/mp3"> </audio>
-        </label>
-    
-  </div>
-
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-<script>
-    $(document).ready (function(){
-        var myAudio = document.getElementById("myaudio");
-        var more = 0;
-        $('.round').click (function(){
-            if(more %2 ==0){
-                $(myAudio)[0].play();
-                more++;
-            }
-            else if(more % 2 != 0){
-                $(myAudio)[0].pause();
-                more++;
-            }
-        });
-    });
-</script>
-<script type="text/javascript" src="assets/javascript/title.js"></script>
-<style>
-  * {
-  cursor: url('cursor.png'), auto;
-  }
-  
-  </style>
-
-</body>
-</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+     <link rel="shortcut icon" type="image/png" href="tavomama.png">
+     <meta property="fb:app_id" content="201301290227999" /> 
+     <meta property="og:title" content="Tavo mama..."/>
+     <meta property="og:type"   content="website" /> 
+     <meta property="og:description" content="Tik rimtų nervų šeimininkams!" />
+     <meta property="og:url" content="https://tavomama.lt"/>
+     <meta property="og:image" content="https://tavomama.lt/tavomama-fb.png"/>
+     <style type="text/css">
+      .fb-like {position: fixed !important; width:290px; bottom: 60px; margin-left: auto; margin-right: auto; left: 0; right: 0;}
+      #centras {position: absolute; width:80%; top:10%; margin-left: auto; margin-right: auto; left: 0; right: 0;}
+      p {text-align: center; font-size:3em; font-weight:bold}
+      .apacia {position: fixed; bottom: 1px; width:450px; text-align:center; margin-left: auto; margin-right: auto; left: 0; right: 0;}
+      .donate {position: fixed; bottom: 5px; width:450px; text-align:center; margin-left: auto; margin-right: auto; left: 0; right: 0;}
+     </style>
+     <title>Tavo mama</title>
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   
+     ga('create', 'UA-70878714-4', 'auto');
+     ga('send', 'pageview');
+   
+   </script>
+    </head>
+    <body>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '201301290227999',
+         xfbml      : true,
+         version    : 'v2.5'
+       });
+     };
+   
+     (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+   </script>
+   <div id="centras">
+     <div id="citata"></div>
+     <script>
+       (function() {
+         var citatos = [
+           {
+             text: "Tavo mama tokia stora, kad jos šiknos šešėlis sveria 15 kg.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad nuejus i restorana ji pasiima meniu ir sako: Gerai.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kai apie ją 2 kartus apibėgau, pasiklydau.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji aukštesnė atsigulus.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kai ji pluduriavo Atlanto vandenynę, Kolumbas ją palaikė \"Naująja Žeme\".",
+           },
+           {
+             text: "Tavo mama tokia stora, kad apie ją skraido NASA orbitinis satelitas.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad Neil Armstrong ant jos nutupė 1969.",
+           },
+           {
+             text: "Tavo mama tokia sena, kad jos socialinio draudimo numeris yra \"1\".",
+           },
+           {
+             text: "Tavo mama tokia sena, kad 3 klasėje ji sėdėjo už Jėzaus.",
+           },
+           {
+             text: "Tavo mama tokia sena, kad ji vis dar skolinga Jėzui 50 centų.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kuomet ji atsisėdo ant \"Memory\" čiužinio, jis viską pamiršo.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kai ji sedėjo paplūdimyje Greenpeace ją įmetė atgal į vandenį.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad, kuomet ji guli papludimyje, žmonės aplink ją bėga šaukdami \"laisvė banginiams\".",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji sukelia potvynius ir atoslūgius.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji turi savo pašto kodą.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji gyvena dviejose laiko zonose.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad žmonės aplink ją nubėga maratoną.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kartą bandydamas ją apvažiuoti pritrukau benzino.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kaskart jai apsisukus žmonės švenčia sutiktuvių vakarėlį.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad kaskart jai užsidėjus aukštakulnius atrandama naftos.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad jai užlipus ant svarstyklių, jos parodo: \"Prašome lipti po vieną\".",
+           },
+           {
+             text: "Tavo mama tokia stora, kad vienintelė jos gaunama dešrelė yra dešrainis.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji naudoja Eifelio bokštą kaip dantų krapštuką.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad MacDonald's atidarė restoraną jos namuose.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad jai nešiojant maikutę su \"X\" ant jos leidžiasi sraigtasparniai.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad jai iškritus iš lovos, ji iškreta pro abi puses.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji užtrigo garaže.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji pabunda dalimis.",
+           },
+           {
+             text: "Tavo mama tokia stora, kad ji atsisėdus autobuso gale autobusas važiuoja ant dvieju ratų."
+           },
+           {
+             text: "Tavo mama tokia stora, kad man truko du autobusus ir viena traukiny kad galečiau nuvažiuoti į jos gera pusė"
+           },
+           {
+             text: "Tavo mama tokia stora, kad vienintelės jos nuotraukos yra darytos palydovu.",
+           },
+           {
+             text: "Tavo mama tokia stora ir sena, kad dievas sakydamas \"Tebūna šviesa!\"jis papraše tavo mamos pasitraukti."
+           },
+           {
+             text: "Tavo mama tokia stora, kad NASA planuoja ant jos išlaipinti žmogų.",
+           }
+         ];
+         var citata = citatos[Math.floor(Math.random() * citatos.length)];
+         document.getElementById("citata").innerHTML =
+           '<p>' + citata.text + '</p>';
+       })();
+     </script>
+   </div>
+   <div
+     class="fb-like"
+     data-share="true"
+     data-width="450"
+     data-show-faces="true">
+   </div>
+   
+   
+   </body>
+   </html>
+   
